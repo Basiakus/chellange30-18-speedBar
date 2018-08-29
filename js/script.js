@@ -2,7 +2,7 @@
 	const speedBar = speechSpeed.querySelector('.speed-bar');
 	const video = document.querySelector('.flex');
 
-	function sppedOfSpeech(e) {
+	function speedOfSpeech(e) {
 		const valueOFSpeedBar = e.pageY - this.offsetTop;
 		const proc = valueOFSpeedBar / this.offsetHeight;
 		const slowest = 0.5;
@@ -15,4 +15,4 @@
 		console.log(proc);
 	}
 
-	speechSpeed.addEventListener('mousemove', sppedOfSpeech);
+	speechSpeed.addEventListener('mousemove', speedOfSpeech);
